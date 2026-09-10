@@ -90,6 +90,11 @@ SELECT name FROM Department;
 SELECT name FROM Employee
 where department_id=1;
 
+SELECT  Employee.name From Employee
+join Department on Employee.department_id=Department.department_id
+where Department.name='IT'
+;
+
     
 --Select employees whose names start with 'J'.
 SELECT * FROM Employee
